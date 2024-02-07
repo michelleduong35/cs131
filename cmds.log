@@ -1,0 +1,46 @@
+    1  passwd
+    2  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/spotify-2023.csv
+    3  cat spotify-2023.csv
+    4  vi spotify-2023.csv
+    5  ls
+    6  vi text.csv
+    7  ls
+    8  echo "someWord" > demo.txt
+    9  cat demo.txt
+   10  ls
+   11  wget www.github.com
+   12  $ git --version
+   13  $ sudo dnf install git-all
+   14  $ sudo apt install git-all
+   15  git --version
+   16  ls
+   17  cd
+   18  makedir cs133
+   19  mkdir cs131
+   20  cd cs131
+   21  git init
+   22  touch newFile.txt
+   23  ls
+   24  git status
+   25  git add
+   26  git add .
+   27  git status
+   28  commit -m "This is my first commit!"
+   29  git commit -m "This is my first commit!"
+   30  git config -- global user.email "michelleduong35@gmail.com"
+   31  git config --global user.email "michelleduong35@gmail.com"
+   32  git config --global user.name "Michelle Duong"
+   33  git commit -m "This is my first commit!"
+   34  ls
+   35  cd cs131
+   36  git branch
+   37  git push origin newBranch
+   38  git remote add origin https://github.com/michelleduong/cs131.git
+   39  git push newBranch
+   40  git push cs131
+   41  git branch
+   42  git push origin newBranch
+   43  git pull
+   44  mkdir worksheet1
+   45  ls
+   46  history > cmds.log
