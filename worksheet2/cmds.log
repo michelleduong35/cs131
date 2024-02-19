@@ -1,0 +1,279 @@
+    1  passwd
+    2  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/spotify-2023.csv
+    3  cat spotify-2023.csv
+    4  vi spotify-2023.csv
+    5  ls
+    6  vi text.csv
+    7  ls
+    8  echo "someWord" > demo.txt
+    9  cat demo.txt
+   10  ls
+   11  wget www.github.com
+   12  $ git --version
+   13  $ sudo dnf install git-all
+   14  $ sudo apt install git-all
+   15  git --version
+   16  ls
+   17  cd
+   18  makedir cs133
+   19  mkdir cs131
+   20  cd cs131
+   21  git init
+   22  touch newFile.txt
+   23  ls
+   24  git status
+   25  git add
+   26  git add .
+   27  git status
+   28  commit -m "This is my first commit!"
+   29  git commit -m "This is my first commit!"
+   30  git config -- global user.email "michelleduong35@gmail.com"
+   31  git config --global user.email "michelleduong35@gmail.com"
+   32  git config --global user.name "Michelle Duong"
+   33  git commit -m "This is my first commit!"
+   34  ls
+   35  cd cs131
+   36  git status
+   37  git checkout -b newBranch
+   38  git branch
+   39  git push origin newBranch
+   40  git remote add origin https://github.com/michelleduong35/cs131
+   41  git push origin newBranch
+   42  git remote add origin https://github.com/michelleduong35/cs131
+   43  git push origin newBranch
+   44   cd ~/.ssh && ssh-keygen
+   45  mkdir ~/.ssh
+   46   cd ~/.ssh && ssh-keygen
+   47  ls
+   48  cat id_rsa.pub
+   49   cd ~/.ssh && ssh-keygen
+   50  cat id_rsa.pub
+   51  git remote add origin https://github.com/michelleduong35/cs131
+   52  ls
+   53  cd root
+   54  prev
+   55  cd
+   56  ls
+   57  cd cs131
+   58  git remote add origin https://github.com/michelleduong35/cs131
+   59  git push origin newBranch
+   60  ls
+   61  cd cs131
+   62  git branch
+   63  git push origin newBranch
+   64  git remote add origin https://github.com/michelleduong/cs131.git
+   65  git push newBranch
+   66  git push cs131
+   67  git branch
+   68  git push origin newBranch
+   69  git pull
+   70  mkdir worksheet1
+   71  ls
+   72  history > cmds.log
+   73  git push origin cmds.log
+   74  cd worksheet1
+   75  git push cmds.log
+   76  git push origin cmds.log
+   77  cat cmds.log
+   78  ls
+   79  echo history > cmds.log
+   80  ls
+   81  git push origin cmds.log
+   82  git push origin
+   83  git add .
+   84  git status
+   85  git add .
+   86  git add cmds.log
+   87  git status
+   88  git commit -m "cmds.log"
+   89  git push origin
+   90  cat cmds.log
+   91  wget www.github.com
+   92  history < cmds.log
+   93  cat cmds.log
+   94  history > cmds.log
+   95  cat cmds.log
+   96  git add cmds.log
+   97  git status
+   98  git commit -m "Correct update of cmds.log"
+   99  git branch
+  100  git push origin cmds.log
+  101  git push origin
+  102  git checkout main
+  103  git branch
+  104  git branch master
+  105  git checkout master
+  106  git status
+  107  cat cmds.log
+  108  history > cmds.log
+  109  cat cmds.log
+  110  git status
+  111  git add cmds.log
+  112  git status
+  113  git commit -m "Updated cmds.log"
+  114  git status
+  115  git add cmds.log
+  116  git status
+  117  git add cmds.log
+  118  git status
+  119  git add ../cmds.log
+  120  gti status
+  121  git status
+  122  git commit -m "Updated cmds.log"
+  123  git push
+  124  git push origin
+  125  git checkout newBranch
+  126  ls
+  127  cat cmds.log
+  128  git add cmds.log
+  129  git status
+  130  git add ../cmds.log
+  131  git commit
+  132  git status
+  133  ls
+  134  git add cmds.log
+  135  git status
+  136  history > cmds.log
+  137  git status
+  138  git add cmds.log
+  139  git status
+  140  git commit -m "Updated cmds.log"
+  141  git push origin
+  142  git push --set-upstream origin master
+  143  git clone https://github.com/michelleduong35/cs131.git
+  144  ls
+  145  cd cs131
+  146  ls
+  147  cd cs131
+  148  cd
+  149  ls
+  150  man -i
+  151  man -i grep
+  152  echo 'pwd'
+  153  echo `pwd`
+  154  echo $SHELL
+  155  a = "Hello World"
+  156  a="Hello World"
+  157  man wc -l
+  158  wc -l sampleFile.txt
+  159  ls
+  160  wc -l demo.txt
+  161  a="Hello World"
+  162  echo $a
+  163  c=abc
+  164  echo $c
+  165  c=${a}bc
+  166  echo $c
+  167  export DATETIME=`date "+%Y%m%d_%H%M%S"`
+  168  OUTDIR=out$DATETIME
+  169  echo $OUTDIR
+  170  export DATETIME=`date`
+  171  OUTDIR=out$DATETIME
+  172  echo $OUTDIR
+  173  echo "pwd"
+  174  echo `pwd`
+  175  history > cmds.log
+  176  ls -a
+  177  ls -la
+  178  clear
+  179  vi .bashrc
+  180  cat .bashrc
+  181  vi .bashrc
+  182  cat .bashrc
+  183  source .bashrc
+  184  lll
+  185  vi .bashrc
+  186  sudo cat /etc/sudoers.d
+  187  grep wheel /etc/group
+  188  ls -l
+  189  cat /etc/group
+  190  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+  191  ls
+  192  cat 'Global Youtube Statistics.csv'
+  193  ls
+  194  cd "Global Youtube Statistics.csv"
+  195  cd 'Global Youtube Statistics.csv'
+  196  ls
+  197  cd 'Global YouTube Statistics.csv'
+  198  cat 'Global YouTube Statistics.csv'
+  199  grep "United States"
+  200  ls
+  201  cat 'Global YouTube Statistics.csv' | grep "United States"
+  202  cat 'Global YouTube Statistics.csv' | grep "Music"
+  203  cat 'Global YouTube Statistics.csv' | grep "United States" > counts.txt
+  204  ls
+  205  cat counts.txt
+  206  cat 'Global YouTube Statistics.csv' | grep "Music" >> counts.txt
+  207  cat counts.txt
+  208  cat 'Global YouTube Statistics.csv' | grep "United States" > counts.txt
+  209  cat 'Global YouTube Statistics.csv' | grep "Music" | wc -wl
+  210  cat 'Global YouTube Statistics.csv' | grep "Music" | wc -l
+  211  cat 'Global YouTube Statistics.csv' | grep "Music" | wc
+  212  cat 'Global YouTube Statistics.csv' | grep "Music" | wc >> counts.txt
+  213  cat counts.txt
+  214  vi counts.txt
+  215  cat counts.txt
+  216  history > cmds.log
+  217  tail cmds.log
+  218  cd cs131
+  219  ls
+  220  makedir worksheet2
+  221  mkdir worksheet2
+  222  ls
+  223  cd worksheet2
+  224  touch cmds.log
+  225  ls
+  226  history > cmds.log
+  227  tail cmds.log
+  228  cat cmds.log
+  229  cat 'Global YouTube Statistics.csv' | grep "United States" > counts.txt
+  230  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+  231  cat 'Global YouTube Statistics.csv' | grep "United States" > counts.txt
+  232  ls
+  233  cat 'Global YouTube Statistics.csv' | grep "Music" | wc >> counts.txt
+  234  vi counts.txt
+  235  tail counts.txt
+  236  ls
+  237  history > cmds.log
+  238  tail cmds.log
+  239  git status
+  240  git add
+  241  git add .
+  242  git status
+  243  git commit -m "worksheet2 completed!"
+  244  git branch
+  245  git checkout main
+  246  git remote add origin https://github.com/michelleduong35/repoName.git
+  247  git remote add origin https://github.com/michelleduong35/cs131.git
+  248  git status
+  249  git checkout newBranch
+  250  ls
+  251  ;s
+  252  git
+  253  cd ~
+  254  ls
+  255  cd cs131
+  256  git init
+  257  git status
+  258  ls
+  259  git add .
+  260  git status
+  261  git pull
+  262  git status
+  263  git commit -m "check wrksht1"
+  264  git push cs131 main
+  265  git push https://github.com/michelleduong35/cs131.git main
+  266  ls
+  267  cat worksheet1
+  268  cd worksheet1
+  269  history > cmds.log
+  270  cd cs131
+  271  mkdir worksheet2
+  272  ls
+  273  cd worksheet2
+  274  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+  275  cat 'Global YouTube Statistics.csv' | grep "United States" > counts.txt
+  276  cat 'Global YouTube Statistics.csv' | grep "Music" | wc >> counts.txt
+  277  ls
+  278  vi counts.txt
+  279  history > cmds.log
