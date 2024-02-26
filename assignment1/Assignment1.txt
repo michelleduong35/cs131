@@ -1,0 +1,7 @@
+2. echo $SHELL  //output: /bin/bash
+2. echo $HOME   //output: /mnt/scratch/SP24_CS131_Jyotika/michellesp24
+3. UID: user identifier; command: groups //output: michellesp24, S78
+4. command: chmod u-w myDir //after removing write permissions, i can ls the file, but i cannot create a newDir in the directory
+6. command: free -m //output: total 71367 mebibytes
+9. OS version: 8.6, under the file /etc/os-release
+10: permissions to all users in this file are rwx or all read, write, and execute

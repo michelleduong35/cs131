@@ -1,0 +1,52 @@
+t
+  327  ls
+  328  cd cs131
+  329  git init
+  330  git pull
+  331  ls
+  332  mkdir assignment1
+  333  ls
+  334  cd assignment1
+  335  echo $SHELL //current shell: bash
+  336  echo $HOME  //home path: 
+  337  groups      //UID: user identifier; part of groups : michellesp24 & S78
+  338  mkdir myDir
+  339  chmod u-w myDir //i cannot add a directory after removing write permissions, but i can ls to see what is in the directory and the perms
+  340  cd assignment1
+  341  ls
+  342  ls -ld myDir
+  343  cd myDir
+  344  ls
+  345  mkdir tempDir
+  346  cd assignment1
+  347  cd~
+  348  cd ~
+  349  ls
+  350  cd cs131
+  351  ls
+  352  cd assignment1
+  353  mkdir myDir2
+  354  mkdir myDir3
+  355  ls
+  356  cd myDir2
+  357  touch myFile.txt
+  358  ls
+  360  cd ..
+  361  cd myDir3
+  362  pwd
+  363  cd ..
+  364  cd myDir2
+  365  ls
+  366  mv myFile.txt /mnt/scratch/SP24_CS131_Jyotika/michellesp24/cs131/assignment1/myDir3
+  367  ls
+  368  cd ..
+  369  cd myDir3
+  370  ls
+  371  cd ..
+  372  free -m                 //this checks your RAM storage, total 71367 meibibytes
+  373  cat /etc/os-release      //version: 8.6
+  374  ls -l /etc/os-release    ///etc/os-release; all permissions for owner(root), group(root), and others is rwx, all perms
+  375  ls -l > Assignment1.txt
+  376  ls
+  377  vi Assignment1.txt
+  378  history > cmds.log
