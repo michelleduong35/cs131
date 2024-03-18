@@ -1,0 +1,28 @@
+  433  mkdir assignment2
+  434  ls
+  435  cd assignment2
+  QUESTION 1  find /etc -type f > one.txt 2> two.txt 
+  437  cat one.txt
+  438  cat two.txt
+  439  touch assignment2.txt
+  440  vi assignment2.txt
+  442  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+  444  head -5 'Global YouTube Statistics.csv'
+  QUESTION 2  awk -F ',' '{if(NR>1) print $20 "," $21}' 'Global YouTube Statistics.csv' | sort | uniq -c | sort -nr | awk '{print $2 "," $3 " (" $1 " channels)"}' | head -3
+  454  vi assignment2.txt
+  QUESTION 3  ps -u $(whoami)
+  456  vi assignment2.txt
+  QUESTION 4  vi file.txt
+  458  vi assignment2.txt
+  QUESTION 5  ps -u $(whoami)
+  460  vi assignment2.txt
+  QUESION 6  ps aux
+  462  vi assignment2.txt
+  463  history -20 > cmds.log
+  464  history > cmds.log
+  465  ls
+  466  cat cmds.log
+  467  vi cmds.log
+  468  tail -n 40 cmds.log > cmds.log
+  469  vi cmds.log
+  470  history > cmds.log

@@ -1,0 +1,42 @@
+1a. this command finds all of the regular files in directory /etc and saves outputted file names in one.txt. it saves the standard error output of the command in two.txt.
+1b. in one.txt, we see a list of all regular files in /etc. in two.txt, the "standard error output" that we see is a list of regular files we were denied permission to access in /etc.
+2. awk -F ',' '{if(NR>1) print $20 "," $21}' 'Global YouTube Statistics.csv' | sort | uniq -c | sort -nr | awk '{print $2 "," $3 " (" $1 " channels)"}' | head -3
+Mar,2006 with 15 channels
+Jul,2014 with 13 channels
+Aug,2014 with 12 channels
+Command explanation: first portion awk -F ',' ... .csv' allowed me to grab the created month and year columns excluding the header line and format them to be Year, Month. this output then is sorted so that the same entries are next to each other, then this is counted uniquely, then sorted again reverse numerically so the greatest number of channels appear on the top. Then the output is formatted Year, Month (# channels), which i grab the first 3 (greatest number of channels).
+3.     PID TTY          TIME CMD
+2436174 ?        00:00:01 systemd
+2436176 ?        00:00:00 (sd-pam)
+2436182 ?        00:00:00 sshd
+2436184 pts/4    00:00:00 bash
+2447507 pts/4    00:00:00 ps
+command: ps -u $(whoami) (explanation, ps displays active processes, -u for user, $(whoami) owned by me)
+4.
+    PID TTY          TIME CMD
+2436174 ?        00:00:01 systemd
+2436176 ?        00:00:00 (sd-pam)
+2436182 ?        00:00:00 sshd
+2436184 pts/4    00:00:00 bash
+2448944 ?        00:00:00 sshd
+2448945 pts/1    00:00:00 bash
+2449107 pts/4    00:00:00 vim
+2449180 pts/1    00:00:00 ps
+4b. the process id for vim is 2449107. with the two terminals i notice that the new processes include a second sshd and bash (along with the vim from the file.txt command)
+
+    PID TTY          TIME CMD
+2436174 ?        00:00:01 systemd
+2436176 ?        00:00:00 (sd-pam)
+2436182 ?        00:00:00 sshd
+2436184 pts/4    00:00:00 bash
+2448944 ?        00:00:00 sshd
+2448945 pts/1    00:00:00 bash
+2449709 pts/1    00:00:00 ps  
+4d. after quiting the command (vi file.txt), but still having the two terminals open, i notice that the vim process is now gone, and the duplicate sshd and bash processes are still active.
+5. in linux, the init process is first process started during system boot, and it continues to run until the system is shut down. using the same command(ps -u $(whoami)) i found systemd's PID as 2436174.
+6. mentioned previously, ps displays an active snapshot of processes. aux is a series of options applied to ps, a meaning all users, u specifies that the process details should also be shown(like owner, pid, etc...), and x specifies that it should also include processes not attached to a terminal, such as daemons. example output:
+root     2452572  0.0  0.0      0     0 ?        I    20:26   0:00 [kworker/209:1]
+jyotika  2452614  0.0  0.0   6912  1408 ?        S    20:26   0:00 sleep 5
+alexsp24 2452621  0.0  0.0   6912  1408 ?        S    20:26   0:00 sleep 1
+michell+ 2452622  0.0  0.0  25344  8000 pts/4    R+   20:26   0:00 ps aux
+ 
