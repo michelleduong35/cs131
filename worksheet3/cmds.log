@@ -1,0 +1,20 @@
+  496  git init
+  498  mkdir worksheet3
+  499  cd worksheet3
+  500  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+  501  ls
+  502  cat 'Global YouTube Statistics.csv'
+  503  clear
+  510  ls
+  511  head -n 5 'Global YouTube Statistics.csv'
+  512  sort -t ',' -k 16 -nr 'Global YouTube Statistics.csv' > ws3.txt  ///QUESTION ONE
+  513  vi ws3.txt
+  514  head ws3.txt
+  517  awk -F ',' '!seen[$8]++' ws3.txt > helper.txt  //QUESTION ONE CONTINUED
+  518  vi helper.txt
+  520  vi ws3.txt
+  522  mv helper.txt ws3.txt    //STILL QUESTION ONE
+  523  vi ws3.txt
+  524  sort -t ',' -k 3 -nr 'Global YouTube Statistics.csv' | awk -F ',' '!seen[$10]++' >> ws3.txt   //QUESTION TWO
+  525  vi ws3.txt
+  526  history > cmds.log
