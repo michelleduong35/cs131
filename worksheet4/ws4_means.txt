@@ -1,0 +1,2 @@
+United States' Subscriber mean: 2.34169e+07 
+India's Subscriber mean: 2.56583e+07

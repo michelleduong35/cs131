@@ -1,0 +1,44 @@
+  547  vi ~/.bash_profile             //TASK ONE: add aliases to file
+  548  source ~/.bash_profile         //TASK ONE: source file
+  549  l                              //TASK ONE: test l & w
+  550  w
+  551  pwd
+  552  ls
+  553  cd worksheet4
+  554  wget -O ytstats.csv https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+  555  clear
+  556  cat ytstats.csv
+  557  clear
+  558  ls
+  559  mkdir Subscribers              //TASK TWO: make Subscriber directory
+  561  pwd
+  584  awk -F, '$8=="United States" {print $3}' ytstats.csv > Subscribers/United_States.txt   //TASK TWO: save US subs count
+  585  ls
+  586  awk -F, '$8=="India" {print $3}' ytstats.csv > Subscribers/India.txt                   //TASK TWO: save India subs count
+  587  cd Subscribers
+  588  ls
+  589  cat India.txt
+  593  cd United_States.txt
+  595  ls
+  596  cd ..
+  598  awk '{ sum += $1; count++ } END { print sum/count }' Subscribers/United_States.txt > ws4_means.txt  //TASK TWO: calc means
+  599  awk '{ sum += $1; count++ } END { print sum/count }' Subscribers/India.txt >> ws4_means.txt         //TASK TWO: calc means
+  600  ls
+  601  cat ws4_means.txt
+  602  vi ws4_means.txt    //TASK TWO: annotate means file to show US vs. India
+  603  cat ws4_means.txt
+  604  ls
+  605  touch greetings.txt  //TASK THREE: create greetings.txt file with necessary text
+  606  vi greetings.txt
+  607  cat greetings.txt
+  608  sed -i 's/Hello/Hi/g' greetings.txt    //TASK THREE: in-place replacement of 'Hello' with 'Hi'
+  609  cat greetings.txt
+  610  sed -i '/Doe/d' greetings.txt          //TASK THREE: in-place deletion of lines containing 'Doe'
+  611  cat greetings.txt
+  612  sed -i 's/$/ (edited)/' greetings.txt  //TASK THREE: in-place addition of '(edited)' to end of lines
+  613  cat greetings.txt
+  614  sed -i '/^Hello, /s/Michael/Mike/' greetings.txt   //TASK THREE: i-p rplcemnt of 'Michael' with 'Mike' if 'Hello', no occur
+  615  cat greetings.txt
+  616  git add .
+  617  git status
+  618  git commit -m "worksheet4 completed"
