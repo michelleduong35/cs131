@@ -1,0 +1,33 @@
+  897  cd cs131
+  898  ls
+  899  mkdir assignment3
+  900  cd assignment3
+  902  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/last.fake
+  903  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/passwd.fake
+  904  ls
+  905  touch assignment3.txt
+  906  vi last.fake
+  TASK1  wc -l last.fake >> assignment3.txt
+  908  vi assignment3.txt
+  TASK1  sed -n '/sp24/p' last.fake >> lastsp24.fake
+  914  ls
+  TASK1  wc -l lastsp24.fake >> assignment3.txt
+  916  vi assignment3.txt
+  921  ls
+  922  vi lastsp24.fake
+  TASK2  grep "Sun" lastsp24.fake | awk '{print $1}' | sort | uniq | awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print $0} END {print "Kudos to these people for putting in the work"}'
+  925  vi assignment3.txt
+  926  vi lastsp24.fake
+  TASK3  awk '{ time = substr($7, 12, 5); if (time >= "23:00" || time <= "04:00") { print $1;} }' lastsp24.fake | sort | uniq | awk 'BEGIN {print "Night Owls List:"} {print $0} END {print "Night Owls are dope. Please ensure you get enough sleep though."}' >> assignment3.txt
+  937  vi assignment3.txt
+  TASK4  awk '{ time = substr($7, 12, 5); if (time >= "05:00" || time <= "09:00") { print $1;} }' lastsp24.fake | sort | uniq | awk 'BEGIN {print "Early Birds List:"} {print $0} END {print "Early Birds are dope. Please ensure you get enough sleep though."}' >> assignment3.txt
+  941  vi assignment3.txt
+  TASK5  awk '$1 ~ /^[Tt]/ {print $1}' lastsp24.fake | sort | uniq >> assignment3.txt
+  944  vi assignment3.txt
+  945  cat passwd.fake
+  946  clear
+  TASK6  awk -F':' '$1 ~ /^a/ && $3 % 2 == 0 {print $1}' passwd.fake >> assignment3.txt
+  949  vi assignment3.txt
+  TASK7  sed 's/[a-zA-Z0-9 ]//g' passwd.fake | sort -u >> assignment3.txt
+  952  vi assignment3.txt
+  953  history > cmds.log
