@@ -1,0 +1,8 @@
+Music entries:
+73 Music.txt
+Entertainment entries:
+68 Entertainment.txt
+Gaming entries:
+26 Gaming.txt
+Comedy entries:
+22 Comedy.txt

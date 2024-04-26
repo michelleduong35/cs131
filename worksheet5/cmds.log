@@ -1,0 +1,21 @@
+  962  cd cs131
+  963  ls
+  964  mkdir worksheet5
+  965  cd worksheet5
+  966  touch ws5.txt
+  967  touch script.sh
+  970  cd worksheet4
+  972  cp ytstats.csv /mnt/scratch/SP24_CS131_Jyotika/michellesp24/cs131/worksheet5
+  973  cd ..
+  974  cd worksheet5
+  975  ls
+  976  mkdir UnitedStates
+  977  ls
+  979  vi script.sh
+  980  chmod +x script.sh
+  981  ./script.sh
+  987  cd UnitedStates
+  994  ls
+ 1009  vi Music.txt
+ 1010  cd ..
+ 1011  history > cmds.log
